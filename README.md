@@ -1,28 +1,27 @@
 Sillas y Mesas Hernández — Sistema de Gestión
 
-Autor: González González Erick Emiliano
-       De La Rosa Hernández Tania
+## **Autores:** 
+- González González Erick Emiliano
+- De La Rosa Hernández Tania
 Curso: Bases de Datos — Prácticas 1–4
 Fecha: Octubre 2025
 
 --------------------------------------------------------------------
-Índice
+## **Índice**
 - Descripción general
 - Estructura del repositorio
 - Contenido de cada carpeta (resumido)
-- Cómo ejecutar (local)
 - Datos de prueba y scripts SQL
 - Seguridad y nota sobre sql-injection
-- Buenas prácticas y line endings
-- Contacto
+- Licencia y Uso
 --------------------------------------------------------------------
 
-Descripción general
+## **Descripción general**
 Repositorio del proyecto académico Sillas y Mesas Hernández. Contiene el diseño de la base de datos (EER y relacional), scripts SQL de creación y carga de datos, y la implementación web en PHP para gestionar clientes, artículos, pedidos y pagos.
 
 --------------------------------------------------------------------
-Estructura del repositorio
-
+## **Estructura del repositorio**
+```bash
 sillas-y-mesas-hernandez/
 ├─ sql/
 │  ├─ database.sql                             # Script DDL (creación de tablas, constraints, PK/FK)
@@ -77,9 +76,10 @@ sillas-y-mesas-hernandez/
 │  └─ table-users.sql                          # Tabla de usuarios (ejemplo vulnerable)
 │
 └─ README.md
+```
 --------------------------------------------------------------------
 
-Contenido de cada carpeta (resumido)
+## **Contenido de cada carpeta (resumido)**
 
 - sql/: scripts SQL para crear la base de datos en MySQL, insertar datos de prueba y ejecutar consultas de validación.
 - php/: implementación PHP de la aplicación. Contiene módulos para clientes, artículos, pedidos, pagos, paquetes y autenticación. Usa PDO y prepared statements.
@@ -89,13 +89,13 @@ Contenido de cada carpeta (resumido)
 
 --------------------------------------------------------------------
 
-Datos de prueba y scripts SQL
+## **Datos de prueba y scripts SQL**
 
 - sql/databasePostgres.sql: crea tablas, secuencias y constraints (ejecutar primero).
 - sql/datos_prueba.sql: inserta 5–10 registros por tablas principales (ejemplos coherentes).
 
 --------------------------------------------------------------------
-Seguridad y nota sobre sql-injection
+## **Seguridad y nota sobre sql-injection**
 
 - El código en php/ utiliza consultas preparadas (PDO) y password_hash() / password_verify() para proteger autenticación y evitar SQL injection.
 - La carpeta sql-injection/ contiene código deliberadamente vulnerable para fines desmotrativos.
@@ -106,7 +106,7 @@ Recomendaciones:
 - Usar sql-injection/usuarios.sql únicamente con datos ficticios y resetear la BD después de las pruebas.
 
 --------------------------------------------------------------------
-Licencia y uso
+## **Licencia y uso**
 
 Proyecto con fines académicos. Siéntete libre de revisar y usar el código con propósito educativo, citando al autor. No usar la parte vulnerable (sql-injection/) en producción.
 
