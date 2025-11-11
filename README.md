@@ -3,6 +3,7 @@ Sillas y Mesas Hernández — Sistema de Gestión
 ## **Autores:** 
 - González González Erick Emiliano
 - De La Rosa Hernández Tania
+<br></br>
 Curso: Bases de Datos — Prácticas 1–4
 Fecha: Octubre 2025
 
