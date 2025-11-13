@@ -99,7 +99,7 @@ sillas-y-mesas-hernandez/
 ## **Seguridad y nota sobre sql-injection**
 
 - El código en php/ utiliza consultas preparadas (PDO) y password_hash() / password_verify() para proteger autenticación y evitar SQL injection.
-- La carpeta sql-injection/ contiene código deliberadamente vulnerable para fines desmotrativos.
+- La carpeta sql-injection/ contiene código deliberadamente vulnerable haciendo uso de consultas concatenadas para fines desmotrativos.
 
 Recomendaciones:
 - Ejecutar sólo en entorno local aislado (no acceso público).
